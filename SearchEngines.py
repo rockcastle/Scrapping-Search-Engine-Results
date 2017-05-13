@@ -1,23 +1,4 @@
-"""
-from bokeh.plotting import figure
-from bokeh.embed import components
-
-
-plot = figure()
-plot.circle([1,2], [3,4])
-
-script, div = components(plot)
-print(script)
-print(div)
-http://www.google.com/search?
-  start=0
-  &num=10
-  &q=red+sox
-  &cr=countryCA
-  &client=google-csbe
-  &output=xml_no_dtd
-
-"""
+#!/usr/bin/python
 
 import argparse
 import sys
@@ -94,6 +75,7 @@ class Search_Engines():
             ccode = c_code.lower()
             dsc= []
             dsc.clear()
+            #Counrty code for duckduckgo, it was got from duckduckgo page make it like this with another script
             cc = ['xa-ar', 'xa-en', 'ar-es', 'au-en', 'at-de', 'be-fr', 'be-nl', 'br-pt', 'bg-bg', 'ca-en', 'ca-fr',
                   'ct-ca',
                   'cl-es', 'cn-zh', 'co-es', 'hr-hr', 'cz-cs', 'dk-da', 'ee-et', 'fi-fi', 'fr-fr', 'de-de', 'gr-el',
